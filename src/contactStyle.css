@@ -1,0 +1,141 @@
+﻿
+.contactFirstPage {
+    background: #96aac0;
+    background-image: url("../images/trading blue background.jpg");
+    /*opacity: 0.8;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    min-height: 800px;
+    width: 100%;
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: cover;
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url(/backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */
+}
+.contactContent {
+    background: rgba(0, 148, 255, 0.3);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    padding-top: 20px;
+    min-height: 600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: cover;
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url(/backgroundsize.min.htc);
+   
+}
+
+
+.contactTitle {
+    font-family: Arial;
+    color: antiquewhite;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.howToContact {
+    width: 80%;
+    margin: 0 auto; /*centre*/
+    height: auto;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    color: antiquewhite;
+}
+.address, .telephone, .email {
+    background-color: rgba(0, 148, 255, 0.1);
+    flex: 1 1 0;
+    -webkit-flex: 1 1 0;
+    -ms-flex: 1 1 100px;
+    padding: 30px; /*add space from content to border*/
+    min-height: 100px;
+    border: 2px ridge grey;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+.boxText {
+    margin-top: 5px;
+}
+
+
+#googleMap {
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+
+    /************************************************/
+    /***********   Alternate Screen Sizes  **********/
+    /************************************************/
+    @media all and (max-width: 767px) /*phone as 1 less than iPad pixel width*/ {
+        #toggle {
+            display: block;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .main, .navigationHolder, .menu {
+            width: 100%;
+            flex-flow: column;
+            -webkit-flex-flow: column;
+            -ms-flex-flow: column;
+        }
+
+        .mainNav {
+            height: auto;
+            /*aligns text Nav as now vertical*/
+            align-items: flex-start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+        }
+
+        .menu li {
+            border-right: 0;
+            height: 45px;
+        }
+
+        .logoParent {
+            padding-bottom: 0 0 15px 20px; /*top right bottom left*/
+        }
+
+        /*end of media script*/
+        @media all and (min-width: 768px) and (max-width: 1023px) { /*ipad width*/
+
+            .main {
+                width: 100%;
+                height: auto;
+                flex-flow: row wrap;
+                -webkit-flex-flow: row wrap;
+                -ms-flex-flow: row wrap;
+            }
+            .menu a:link {
+                padding: 8px 15px;
+                font-size: 0.8em;
+            }
+        }
+
+
+    }

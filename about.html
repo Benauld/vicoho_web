@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home - ViCoHo Website</title>
+    <link rel="stylesheet" href="src/indexStyle.css" />
+    <link rel="stylesheet" href="src/aboutStyle.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $('document').ready(function () {
+            $('#toggle').click(function () {
+                $('.menu').slideToggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="aboutfirstPage">
+        <header>
+            <nav class="mainNav">
+                <div class="logoParent">
+                    <a href="index.html" title="logo"><h1><img src="images/Vicohoweblogo.png" alt="Vicoho logo" height="60" width="115"></h1></a>
+                </div>
+                <div class="mobileParent">
+                    <p id="toggle"><img src="images/small hamburger menu.png" alt="Menu" height="30" width="30"></p>
+                </div>
+                <ul class="menu">
+                    <li class="navHead"><a href="index.html"><h3>home</h3></a></li>
+                    <li class="navHead"><a href="https://www.vicoho.com/vch/index.html" target="_blank"><h3>securities</h3></a></li>
+                    <li class="navHead"><a href="https://www.vicoho.com/8TC/index.html" target="_blank"><h3>coin club</h3></a></li>
+                    <li class="navHead"><a href="about.html"><h3>about</h3></a></li>
+                    <li class="navHead"><a href="contact.html"><h3>contact</h3></a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="backImage">  
+          <!--Third sheet of text page 1-->
+            <div class="thirdColumns2">
+                <div class="left">
+                    <div class="aboutBox">
+                      <h2 class="aboutBoxHead">
+                        About Us
+                      </h2>
+                      <h5 class="aboutBoxHead">
+                        If you want to learn more about us, you’re in the right place.<br>
+                        Read to learn who we are, what we’ve done and keep up to date <br>
+                        with news on LinkedIn or Twitter<br>
+                      </h5>
+                    </div>
+                    <ul class="people">
+                        <li class="staffTeam"><h3>Executive Team</h3></li>
+
+                        <li class="staff">
+                            <table style="width:100%">
+                                <tr>
+                                    <th rowspan="2"><img src="images/andrew-gordon mugshot.jpg" alt="CIO: Andrew Gordon" height="120" width="90"></th>
+                                    <td class="staffId">CEO: Andrew Gordon</tdclass="staffId>
+                                </tr>
+                                <tr>
+                                    <td class="staffBio">Trading Systems solution architect with 18+ years’ experience in trading systems, investment banking, commodities trading and treasury management</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="staff">
+                            <table style="width:100%">
+                                <tr>
+                                    <th rowspan="2"><img src="images/ben mugshot.jpg" alt="CEO: Ben Auld" height="120" width="90"></th>
+                                    <td class="staffId">CTO: Ben Auld</td>
+                                </tr>
+                                <tr>
+                                    <td class="staffBio">Board and Programme director with 30 years technical experience across financial services including FX, equities, investment management and banking</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="staff">
+                            <table style="width:100%">
+                                <tr>
+                                    <th rowspan="2"><img src="images/kd photo.jpg" alt="CMO: Kevin Duckworth" height="120" width="90"></th>
+                                    <td class="staffId">CMO: Kevin Duckworth</td>
+                                </tr>
+                                <tr>
+                                    <td class="staffBio">
+                                        C level Commercial and Marketing Director with over 35 years’ experience operating at Board Level.
+                                        A digital thought leader with a growth mindset.
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="staff">
+                            <table style="width:100%">
+                                <tr>
+                                    <th rowspan="2"><img src="images/Nick-Andrews-123.jpg" alt="CCO: Nick Andrews" height="120" width="90"></th>
+                                    <td class="staffId">CCO: Nick Andrews</td>
+                                </tr>
+                                <tr>
+                                    <td class="staffBio">
+                                        Nick has had a distinguished 35 year career in the financial services sector that has included being on the Board of a large multi-disciplined securities broker/dealer, head of credit at the UK banking
+                                        subsidiary of Japanese securities house and many years in senior credit and compliance roles.
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="staffTeam"><h3>Trusted Advisors</h3></li>
+                        <li class="staff">
+                            <table style="width:100%">
+                                <tr>
+                                    <th rowspan="2"><img src="images/Neil Jones.jpg" alt="Consultant: Neil Jones" height="120" width="90"></th>
+                                    <td class="staffId">Consultant: Neil Jones</td>
+                                </tr>
+                                <tr>
+                                    <td class="staffBio">
+                                        Director and consultant with over 30 years consulting experience mostly within Capital Markets
+
+                                </tr>
+                            </table>
+                    </ul>
+                </div>
+                <div class="right">
+                    <a class="twitter-timeline" data-chrome="transparent" href="https://twitter.com/ComVicoho?ref_src=twsrc%5Etfw">Tweets by ComVicoho</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+           
+        </section>
+
+
+    </div>
+   
+
+    
+    <!--Footer with Copyright-->
+    <footer class="mainFooter">
+        <small>
+            &copy; <time>2018</time>
+            <a href="index.html">ViCoHo Ltd</a>
+            <author>Developer: Ben Auld</author>
+        </small>
+</body>
+</html>

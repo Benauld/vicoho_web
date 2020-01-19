@@ -1,0 +1,135 @@
+﻿
+.aboutfirstPage {
+    background: #96aac0;
+    background-image: url("../images/towerbridge.png");
+    /*opacity: 0.8;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    min-height: 800px;
+    width: 100%;
+    /* lt ie8 */
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center bottom;
+    /* scale bg image proportionately */
+    background-size: cover;
+    /* ie8 workaround - http://louisremi.github.io/background-size-polyfill/ */
+    -ms-behavior: url(/backgroundsize.min.htc);
+    /* prevent scaling past src width (or not) */
+    /* max-width: 1200px; */
+}
+.aboutBox, .staff {
+    background-color: rgb(252, 251, 251, 0.5);
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+    min-height: 40px;
+    width: 100%;
+    -ms-background-position-x: center;
+    -ms-background-position-y: bottom;
+    background-position: center bottom;
+    background-size: cover;
+    -ms-behavior: url(/backgroundsize.min.htc);
+    margin-bottom:20px;
+}
+
+.staffTeam {
+    text-align: center;
+    margin-bottom:10px;
+}
+
+.aboutBoxHead {
+    color: #160f0f;
+    padding: 10px 10px 20px 10px;
+}
+
+table {
+    
+    padding: 10px, 10px, 10px, 10px;
+    
+}
+
+th {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.staffId {
+    font-size: 1.1em;
+    font-weight:700
+    font-family: awsesome, Roboto, sans-serif;
+}
+
+.staffBio {
+    font-size: 0.8em;
+    font-family: awsesome, Roboto, sans-serif;
+}
+
+.twitter-timeline {
+    background: rgba(255,255,255,.5);
+    border-radius: 5px;
+}
+
+
+    /************************************************/
+    /***********   Alternate Screen Sizes  **********/
+    /************************************************/
+    @media all and (max-width: 767px) /*phone as 1 less than iPad pixel width*/ {
+        #toggle {
+            display: block;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .main, .navigationHolder, .menu {
+            width: 100%;
+            flex-flow: column;
+            -webkit-flex-flow: column;
+            -ms-flex-flow: column;
+        }
+
+        .mainNav {
+            height: auto;
+            /*aligns text Nav as now vertical*/
+            align-items: flex-start;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+        }
+
+        .menu li {
+            border-right: 0;
+            height: 45px;
+        }
+
+        .logoParent {
+            padding-bottom: 0 0 15px 20px; /*top right bottom left*/
+        }
+
+        .tagLine {
+            font-size: 40px;
+        }
+
+        .tagLineDes {
+            font-size: 20px;
+        }
+        /*end of media script*/
+        @media all and (min-width: 768px) and (max-width: 1023px) { /*ipad width*/
+
+            .main {
+                width: 100%;
+                height: auto;
+                flex-flow: row wrap;
+                -webkit-flex-flow: row wrap;
+                -ms-flex-flow: row wrap;
+            }
+        }
+
+        .menu a:link {
+            padding: 8px 15px;
+            font-size: 0.8em;
+        }
+    }
